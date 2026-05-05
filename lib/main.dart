@@ -39,7 +39,7 @@ class _OptiCalcHomePageState extends State<OptiCalcHomePage> {
   final TextEditingController _s2Controller = TextEditingController(text: '0');
   final TextEditingController _s3Controller = TextEditingController(text: '0');
 
-  late List<OpticalElement> _elements = <OpticalElement>[
+  final List<OpticalElement> _elements = <OpticalElement>[
     const OpticalElement(
       type: OpticalElementType.linearPolarizer,
       name: 'Input Polarizer',
