@@ -48,8 +48,11 @@ class StokesVector {
     return s0 >= magnitude;
   }
 
+  @Deprecated('Use poincareX instead.')
   double get poincare_x => s0 == 0 ? 0 : s1 / s0;
+  @Deprecated('Use poincareY instead.')
   double get poincare_y => s0 == 0 ? 0 : s2 / s0;
+  @Deprecated('Use poincareZ instead.')
   double get poincare_z => s0 == 0 ? 0 : s3 / s0;
 
   double get poincareX => poincare_x;
