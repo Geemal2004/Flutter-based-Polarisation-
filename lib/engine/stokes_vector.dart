@@ -48,16 +48,16 @@ class StokesVector {
     return s0 >= magnitude;
   }
 
-  @Deprecated('Use poincareX instead.')
-  double get poincare_x => s0 == 0 ? 0 : s1 / s0;
-  @Deprecated('Use poincareY instead.')
-  double get poincare_y => s0 == 0 ? 0 : s2 / s0;
-  @Deprecated('Use poincareZ instead.')
-  double get poincare_z => s0 == 0 ? 0 : s3 / s0;
+  double get poincareX => s0 == 0 ? 0 : s1 / s0;
+  double get poincareY => s0 == 0 ? 0 : s2 / s0;
+  double get poincareZ => s0 == 0 ? 0 : s3 / s0;
 
-  double get poincareX => poincare_x;
-  double get poincareY => poincare_y;
-  double get poincareZ => poincare_z;
+  @Deprecated('Use poincareX instead.')
+  double get poincare_x => poincareX;
+  @Deprecated('Use poincareY instead.')
+  double get poincare_y => poincareY;
+  @Deprecated('Use poincareZ instead.')
+  double get poincare_z => poincareZ;
 
   List<double> toList() => [s0, s1, s2, s3];
 
