@@ -52,11 +52,8 @@ class StokesVector {
   double get poincareY => s0 == 0 ? 0 : s2 / s0;
   double get poincareZ => s0 == 0 ? 0 : s3 / s0;
 
-  @Deprecated('Use poincareX instead.')
   double get poincare_x => poincareX;
-  @Deprecated('Use poincareY instead.')
   double get poincare_y => poincareY;
-  @Deprecated('Use poincareZ instead.')
   double get poincare_z => poincareZ;
 
   List<double> toList() => [s0, s1, s2, s3];
