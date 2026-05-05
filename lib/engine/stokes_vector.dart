@@ -52,6 +52,10 @@ class StokesVector {
   double get poincare_y => s0 == 0 ? 0 : s2 / s0;
   double get poincare_z => s0 == 0 ? 0 : s3 / s0;
 
+  double get poincareX => poincare_x;
+  double get poincareY => poincare_y;
+  double get poincareZ => poincare_z;
+
   List<double> toList() => [s0, s1, s2, s3];
 
   @override
